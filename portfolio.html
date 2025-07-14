@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Dhir - Software Engineer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.5rem;
+            width: 2px;
+            height: calc(100% + 1rem);
+            background: #e5e7eb;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-5xl font-bold mb-4">Shivam Dhir</h1>
+                    <p class="text-xl mb-4">Software Engineer | CS @ CSULB | Prev @ Amazon</p>
+                    <p class="text-lg opacity-90">Seeking Software Engineer FTE roles</p>
+                    <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
+                        <span class="skill-tag">GitOps</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                       <!-- <i class="fas fa-user text-6xl text-white"></i> -->
+                         <img src="images/shivam.jpg" alt="Shivam Dhir" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.linkedin.com/in/shivamdhir13/" class="text-2xl hover:text-blue-200 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/shivam-dhir/" class="text-2xl hover:text-blue-200 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:shivamdhir90@gmail.com?subject=Nice to meet you Shivam" class="text-2xl hover:text-blue-200 transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6">
+                   By day, a Computer Science grad student at CSULB. By night, a software engineer who crafts scalable systems that don't fall over when you look at them funny
+                </p>
+                <p class="mb-6">
+                    I’ve worn a few hats: I’ve interned at Amazon, built full-stack apps with Spring Boot and React, and herded containers with Kubernetes and Docker (which is exactly as fun as it sounds). My proudest moment? Building microarchitecture for over 10 million users without causing an international incident
+                </p>
+                <p class="mb-8">
+                    While I love a good algorithm, my real passion is solving problems for actual humans. I enjoy working with cross-functional teams to build technology that's intuitive, effective, and maybe even a little delightful. If you need someone to help build something amazing (and who won't steal all the good snacks), I'm all in
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Impact</h3>
+                        <p class="text-gray-600">Leveraging data and technology to create meaningful outcomes</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-lightbulb text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                        <p class="text-gray-600">Constantly learning and pushing the boundaries of what's possible</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                        <p class="text-gray-600">Building solutions that are not just effective but also user-centric</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <<section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Experience</h2>
+            <div class="max-w-4xl mx-auto">
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                                <img src="images/amazon.png" alt="Shivam Dhir" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Software Development Engineer, Intern</h3>
+                                <p class="text-gray-600">Amazon</p>
+                                <p class="text-sm text-gray-500">May 2024 - Aug 2024 • Bellevue, Washington</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Architected a scalable, location-aware microservice for the Alexa mobile app that served over 10 million users. I owned the end-to-end design, from geo-spatial querying to global deployment, directly boosting user engagement by 40%.</li>
+                            <li><b>Tech Stack:</b> Used Java for the server-side logic, DynamoDB for complex geo-spatial searches, and Redis for low-latency caching.</li>
+                            <li><b>Performance:</b> Reduced service latency by 25% by designing and implementing custom API gateways to integrate over five discrete services.</li>
+                            <li><b>Quality & CI/CD:</b> Achieved 95% test coverage by simulating the Alexa app with Flutter/Kotlin and managed global deployment on AWS S3 across 20+ regions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Freelance Software Developer</h3>
+                                <p class="text-gray-600">RadicalX</p>
+                                 <p class="text-sm text-gray-500">Oct 2023 - Apr 2024 • 7 months</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Operated as a freelance developer delivering end-to-end AI/ML solutions. I was responsible for the full project lifecycle, from client requirement analysis to model development and deployment.</li>
+                            <li><b>Core Tools:</b> Utilized Python, Scikit-learn, and Pandas to build and train custom models.</li>
+                            <li>Applied machine learning principles to solve unique business problems, demonstrating adaptability and a client-focused approach.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Student Assistant</h3>
+                                <p class="text-gray-600">California State University, Long Beach</p>
+                                <p class="text-sm text-gray-500">Academic Role</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>While balancing a full Master's course load in Computer Science, I provided critical technical and administrative support, honing my ability to manage stakeholder communication and deliver in a fast-paced environment.</li>
+                            <li>Effectively managed multiple concurrent tasks, significantly improving personal workflow and project management skills.</li>
+                            <li>Acted as a communication bridge between students and university departments, ensuring clarity and timely resolution of issues.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-brain text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Artificial Intelligence Intern</h3>
+                                <p class="text-gray-600">Smartant Technologies</p>
+                                <p class="text-sm text-gray-500">Dec 2021 - Mar 2022 • 4 months</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>My first hands-on role in applied AI, where I developed and tested machine learning models for computer vision and data extraction tasks from proof-of-concept to completion.</li>
+                            <li>Developed a computer vision model for image classification (flooring identification).</li>
+                            <li>Built a handwritten digit recognizer using Histogram of Oriented Gradients (HOG) feature extraction.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mr-4">
+                                <img src="images/data-science.jpg" alt="Shivam Dhir" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Data Science Intern</h3>
+                                <p class="text-gray-600">EISystems Technologies</p>
+                                <p class="text-sm text-gray-500">Internship</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                           <li>Developed automated analytical models to process and extract insights from large, unstructured Twitter datasets, translating raw data into clear, actionable business intelligence.</li>
+                           <li>Engineered data pipelines for processing, filtering, and presenting high volumes of text data.</li>
+                           <li>Utilized Python and its core data science libraries for statistical analysis and pattern recognition.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                 <!-- <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-building text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Intern</h3>
+                                <p class="text-gray-600">Walmart Global Tech</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                           <li>Completed an intensive software engineering program focused on the architectural principles behind large-scale, distributed systems. This was a deep dive into enterprise-level design patterns.</li>
+                           <li><b>Core Focus:</b> Mastered concepts in Advanced Data Structures, Software Architecture, and Relational Database Design.</li>
+                           <li>Gained practical experience in 'data munging' and preparing complex datasets for processing.</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-university text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Club & Assistant Roles</h3>
+                                <p class="text-gray-600">Mgm College Of Engineering & Technology</p>
+                            </div>
+                        </div>
+                       <ul class="list-disc list-inside text-gray-700 space-y-2">
+                           <li>Took a leadership role within the university's Computer Society of India (CSI) and as a Student Assistant, focusing on mentoring peers in foundational computer science principles.</li>
+                           <li>Specialized in teaching Data Structures and Algorithms, reinforcing my own expert-level understanding.</li>
+                           <li>Organized technical workshops and events, fostering a collaborative tech community on campus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-2xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">BlitzCache</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Distributed In-Memory Caching System</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Designed and implemented a high-throughput, low-latency distributed caching system using Go, enabling scalable in-memory key-value storage accessed hundreds of millions of times per second.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Go</span>
+                        <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Redis</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">gRPC</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-2xl text-purple-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">AutoPilot</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Scalable Web Test Framework</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Engineered a modular automation framework using Playwright with TypeScript for end-to-end web testing with GitHub Actions CI/CD.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">TypeScript</span>
+                        <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Playwright</span>
+                        <span class="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">FinRisk</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Cloud-Based Risk Analysis Engine</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Architected microservices using Java, Spring Boot, PostgreSQL, and AWS Lambda for portfolio risk modeling with CI/CD workflows.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Java</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Spring Boot</span>
+                        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">AWS Lambda</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud text-2xl text-indigo-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Content Ingestion Platform</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Distributed Content Ingestion Platform</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Built scalable backend microservices using Django REST Framework to handle high-volume metadata ingestion with AWS and Azure integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Django</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Docker</span>
+                        <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shopping-cart text-2xl text-red-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Shopping Cart System</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Spring Boot powered Shopping Cart</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Architected and developed a robust backend using Spring Boot and Java, delivering a scalable system with 20+ RESTful APIs.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">Spring Boot</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Thymeleaf</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-teal-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-credit-card text-2xl text-teal-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Payment Gateway</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Unified Payment Gateway Integration</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Implemented a full-stack payment gateway integration platform supporting 5+ major e-commerce payment providers with PCI-DSS compliance.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">PostgreSQL</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Selenium</span>
+                        <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">REST API</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-pink-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heart text-2xl text-pink-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">COVID-19 Detection</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Deep Learning for Medical Diagnosis</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Developed CNN models to detect COVID-19 virus in chest X-rays using deep learning, achieving high accuracy in medical image classification.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                        <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">CNN</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-yellow-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-book text-2xl text-yellow-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Library Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">RFID-Based Library System</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Led a team of 4 in automating library operations with advanced features including RFID technology for automatic book scanning and detection.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">RFID</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Java</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Database</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-gray-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-glasses text-2xl text-gray-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Smart Goggle Lens</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Wearable Computing Device</p>
+                    <p class="text-sm text-gray-700 mb-4">
+                        Developed a futuristic wearable device inspired by Google Glass, capable of displaying notifications with optimal light intensity for user comfort.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Arduino</span>
+                        <span class="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded">IoT</span>
+                        <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Wearable Tech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-code mr-2 text-blue-500"></i>Programming Languages
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-server mr-2 text-green-500"></i>Backend & Databases
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-cloud mr-2 text-purple-500"></i>Cloud & DevOps
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">GitOps</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-laptop-code mr-2 text-indigo-500"></i>Frontend
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Thymeleaf</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-tools mr-2 text-orange-500"></i>Tools & Frameworks
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Helm</span>
+                            <span class="skill-tag">Selenium</span>
+                            <span class="skill-tag">Playwright</span>
+                            <span class="skill-tag">gRPC</span>
+                            <span class="skill-tag">REST API</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                            <i class="fas fa-brain mr-2 text-red-500"></i>AI & Machine Learning
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">CNN</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Education</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover border-l-4 border-blue-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-6">
+                            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Master of Science, Computer Science</h3>
+                            <p class="text-lg text-gray-600">California State University, Long Beach</p>
+                            <p class="text-gray-500">August 2023 - May 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        Specializing in advanced computer science topics including distributed systems, software engineering, and cloud computing.
+                    </p>
+                </div>
+
+                <div class="mt-8 bg-white p-8 rounded-lg shadow-lg card-hover border-l-4 border-green-500">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mr-6">
+                            <i class="fas fa-university text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Bachelor of Engineering, Computer Engineering</h3>
+                            <p class="text-lg text-gray-600">University of Mumbai</p>
+                            <p class="text-gray-500">August 2019 - May 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        Strong foundation in computer science fundamentals, programming, and software development principles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Publications & Awards</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <h3 class="text-xl font-semibold mb-4">
+                            <i class="fas fa-file-alt mr-2 text-blue-500"></i>Publications
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Smart Goggle Lens using Arduino Uno</h4>
+                                <p class="text-sm text-gray-600">International Journal of Advanced Research In Science, Communication and Technology</p>
+                                <p class="text-xs text-gray-500">April 2023</p>
+                                <p class="text-sm text-gray-700 mt-2">
+                                    Research on wearable computing technology, inspired by Google Glass, focusing on smart notification systems and user interaction.
+                                </p>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Heart Disease Prediction Using Deep Learning</h4>
+                                <p class="text-sm text-gray-600">National e-Conference on AI & ML 2021</p>
+                                <p class="text-xs text-gray-500">November 2021</p>
+                                <p class="text-sm text-gray-700 mt-2">
+                                    Presented research on using deep learning functional approaches for heart disease prediction at national conference.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <h3 class="text-xl font-semibold mb-4">
+                            <i class="fas fa-trophy mr-2 text-yellow-500"></i>Awards & Recognition
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-yellow-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">2nd Runner Up - Inter College Java Event</h4>
+                                <p class="text-sm text-gray-600">MGMCET IEEE and Lets Upgrade</p>
+                                <p class="text-xs text-gray-500">November 2020</p>
+                                <p class="text-sm text-gray-700 mt-2">
+                                    Achieved 2nd runner-up position in inter-college technical event for Java domain organized by HASH 1.0 Computer Department Club.
+                                </p>
+                            </div>
+                            <div class="border-l-4 border-purple-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Research Paper Presentation</h4>
+                                <p class="text-sm text-gray-600">National e-Conference on AI & ML</p>
+                                <p class="text-xs text-gray-500">November 2021</p>
+                                <p class="text-sm text-gray-700 mt-2">
+                                    Successfully presented research paper on heart disease prediction using deep learning at national conference.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Recommendations</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-blue-500">
+                    <div class="flex items-start mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4 bg-blue-100">
+                            <img src="images/prakash_jha.jpeg" alt="Shivam Dhir" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Prakash Jha</h3>
+                            <p class="text-gray-600">Senior Machine Learning Engineer at AWS Global Security</p>
+                            <!--<p class="text-sm text-gray-500">March 10, 2025, Prakash was senior to Shivam but didn't manage Shivam directly</p>-->
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I had the pleasure of working with Shivam during his internship at Amazon. He was involved in the development of the location-aware content recommendations for Alexa+ customers. Throughout our collaboration, Shivam consistently demonstrated exceptional technical expertise and a strong problem-solving ability. He is a quick learner, he quickly learned existing systems and built his solution around it making the integration seamless. He collaborated with internal teams and onboarded them as location aware content providers for news, restaurants, weather, and more. Shivam has great technical and analytical skills and he is a great force multiplier."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-green-500">
+                    <div class="flex items-start mb-4">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-4 bg-green-100">
+                            <!-- <i class="fas fa-user text-2xl text-green-500"></i> -->
+                            <img src="images/rashmi_lalwani.jpeg" alt="Shivam Dhir" class="w-full h-full object-cover text-2xl text-green-500">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Rashmi Lalwani</h3>
+                            <p class="text-gray-600">Software Development Engineer 2 @ Amazon Alexa | LLMs, GenAI, ML Inference and Large Scale Distributed Systems</p>
+                            <!-- <p class="text-sm text-gray-500">February 16, 2025, Rashmi worked with Shivam on the same team</p> -->
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I worked with Shivam during his internship at amazon and was impressed by his deep dive skills and ability to coordinate effectively with teams. He successfully designed and implemented a complex project requiring cross-team collaboration and delivered a strong presentation. Highly recommend him as an SDE."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Let's Connect</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl mb-8">
+                    I'm always excited to discuss new opportunities, innovative projects, and ways we can create something amazing together.
+                </p>
+                <div class="flex justify-center gap-8 mb-8">
+                    <a href="https://www.linkedin.com/in/shivamdhir13/" class="flex items-center text-lg hover:text-blue-200 transition-colors">
+                        <i class="fab fa-linkedin text-2xl mr-3"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/shivam-dhir/" class="flex items-center text-lg hover:text-blue-200 transition-colors">
+                        <i class="fab fa-github text-2xl mr-3"></i>
+                        GitHub
+                    </a>
+                    <a href="mailto:shivamdhir90@gmail.com?subject=Nice to meet you Shivam" class="flex items-center text-lg hover:text-blue-200 transition-colors">
+                        <i class="fas fa-envelope text-2xl mr-3"></i>
+                        Email
+                    </a>
+                </div>
+                <p class="text-lg opacity-90">
+                    Seeking Software Engineer FTE roles where I can contribute to building scalable systems and making a meaningful impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Shivam Dhir. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Built with passion for technology and innovation</p>
+        </div>
+    </footer>
+</body>
+</html>
